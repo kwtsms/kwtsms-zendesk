@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "kwtsms SMS Gateway",
+    "short_description": "Send SMS notifications for ticket events via kwtsms",
+    "long_description": "Automatically send SMS notifications to customers and agents when ticket events occur in Zendesk. Powered by kwtsms, the leading SMS gateway in Kuwait."
+  },
+  "dashboard": { "title": "Dashboard" },
+  "settings": { "title": "Settings" },
+  "templates": { "title": "Templates" },
+  "logs": { "title": "Logs" }
+}

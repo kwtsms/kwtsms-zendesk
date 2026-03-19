@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "بوابة الرسائل القصيرة kwtsms",
+    "short_description": "إرسال إشعارات SMS لأحداث التذاكر عبر kwtsms",
+    "long_description": "إرسال إشعارات SMS تلقائيا للعملاء والوكلاء عند حدوث أحداث التذاكر في Zendesk. مدعوم من kwtsms، بوابة الرسائل القصيرة الرائدة في الكويت."
+  },
+  "dashboard": { "title": "لوحة التحكم" },
+  "settings": { "title": "الإعدادات" },
+  "templates": { "title": "القوالب" },
+  "logs": { "title": "السجلات" }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "kwtsms SMS Gateway",
+  "author": {
+    "name": "kwtSMS",
+    "email": "support@kwtsms.com",
+    "url": "https://www.kwtsms.com"
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0",
+  "defaultLocale": "en",
+  "private": false,
+  "singleInstall": true,
+  "location": {
+    "support": {
+      "nav_bar": {
+        "url": "assets/iframe.html",
+        "autoHide": false,
+        "autoLoad": true,
+        "flexible": true
+      },
+      "background": {
+        "url": "assets/iframe.html",
+        "autoLoad": true
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "backend_url",
+      "type": "text",
+      "required": true,
+      "secure": false,
+      "default": "https://your-backend-url.com"
+    }
+  ],
+  "domainWhitelist": []
+}
