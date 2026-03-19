@@ -41,11 +41,17 @@ app.get('/health', (req, res) => {
 });
 
 // Initialize database and start server
-initDb();
-startCron();
+async function start() {
+  await initDb();
+  startCron();
+  app.listen(PORT, () => {
+    console.log(`kwtsms-zendesk server running on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`kwtsms-zendesk server running on port ${PORT}`);
+start().catch((err) => {
+  console.error('Failed to start server:', err);
+  process.exit(1);
 });
 
 module.exports = app;
