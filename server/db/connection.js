@@ -80,15 +80,17 @@ class DatabaseWrapper {
   }
 
   transaction(fn) {
+    // sql.js auto-commits each statement. Transactions are simulated by
+    // running all statements then saving once at the end.
     return (...args) => {
-      this._db.run('BEGIN TRANSACTION');
+      _savePaused = true;
       try {
         const result = fn(...args);
-        this._db.run('COMMIT');
+        _savePaused = false;
         _save();
         return result;
       } catch (err) {
-        this._db.run('ROLLBACK');
+        _savePaused = false;
         throw err;
       }
     };
@@ -100,7 +102,10 @@ class DatabaseWrapper {
   }
 }
 
+let _savePaused = false;
+
 function _save() {
+  if (_savePaused) return;
   if (!db || !dbPath) return;
   try {
     const data = db._db.export();
