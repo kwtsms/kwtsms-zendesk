@@ -1,5 +1,12 @@
 # kwtsms Zendesk Integration
 
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Zendesk](https://img.shields.io/badge/Zendesk-Marketplace-03363D?logo=zendesk&logoColor=white)](https://www.zendesk.com/marketplace/)
+[![kwtsms](https://img.shields.io/badge/kwtsms-SMS%20Gateway-FFA200)](https://www.kwtsms.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 SMS notifications for Zendesk ticket events via the kwtsms gateway.
 
 ## Features
