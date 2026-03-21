@@ -1,20 +1,69 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+build/
+
+# Environment
 .env
 .env.*
 !.env.example
+
+# Database
 *.db
 *.sqlite
+data/
+
+# Tests
+test/
 tests/
+
+# Documentation (local only)
 docs/
+
+# Claude Code
 .claude/
 CLAUDE.md
-.worktrees/
-docker/
-.superpowers/
 napkin.md
-*.log
+
+# Worktrees
+.worktrees/
+
+# Docker
+docker/
+docker-compose.override.yml
+
+# Playwright
+.playwright/
+.playwright-cache/
+playwright-report/
+test-results/
+
+# Superpowers
+.superpowers/
+
+# IDE
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp
 tmp/
+
+# Coverage
 coverage/
+.nyc_output/
+
+# Package manager
+*.tgz
