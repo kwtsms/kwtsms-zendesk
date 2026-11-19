@@ -9,6 +9,8 @@
 
 SMS notifications for Zendesk ticket events via the kwtsms gateway.
 
+All kwtSMS integrations: [kwtsms.com/integrations](https://www.kwtsms.com/integrations/)
+
 ## Features
 
 - Automatic SMS on ticket events (new, status change, agent reply, assignment)
